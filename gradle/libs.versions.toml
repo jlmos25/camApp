@@ -1,0 +1,30 @@
+[versions]
+ktx = "1.13.1"
+runtime = "2.8.5"
+activity = "1.9.2"
+compose = "2024.09.01"
+junit = "4.13.2"
+test-ext = "1.2.1"
+espresso = "3.6.1"
+navigator = "2.8.0"
+koin-core = "4.0.0-RC2"
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+runtime-ktx = { group = "androidx.lifecycle" , name="lifecycle-runtime-ktx", version.ref = "runtime"}
+activity-ktx = {group = "androidx.activity" , name="activity-compose", version.ref="activity"}
+compose-ktx = {group = "androidx.compose", name="compose-bom", version.ref="compose"}
+ui-ktx= {group = "androidx.compose.ui", name="ui"}
+graphics-ktx = {group = "androidx.compose.ui", name="ui-graphics"}
+tooling-preview-ktx = { group = "androidx.compose.ui", name ="ui-tooling-preview" }
+material3-ktx = { group = "androidx.compose.material3", name="material3"}
+junit-ktx = { group = "junit", name="junit", version.ref  = "junit"}
+test-ext-ktx = {group = "androidx.test.ext", name="junit", version.ref  = "test-ext"}
+espresso-ktx = {group = "androidx.test.espresso", name = "espresso-core", version.ref  = "espresso"}
+ui-test-ktx = { group = "androidx.compose.ui", name = "ui-test-junit4"}
+ui-tooling-ktx = { group = "androidx.compose.ui", name = "ui-tooling"}
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest"}
+navigator-ktx = {group = "androidx.navigation", name = "navigation-compose", version.ref  = "navigator"}
+koin-core-ktx = { group = "io.insert-koin",  name = "koin-core", version.ref  = "koin-core" }
+
+[plugins]
