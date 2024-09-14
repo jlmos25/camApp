@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.msqr.camapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.msqr.camapp"
         minSdk = 28
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
