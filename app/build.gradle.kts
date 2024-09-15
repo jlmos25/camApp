@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias (libs.plugins.android.application)
+    alias (libs.plugins.android.jetbrains.ktx)
 }
 
 android {
@@ -40,7 +40,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.10"
     }
     packaging {
         resources {
@@ -66,4 +66,8 @@ dependencies {
     androidTestImplementation(libs.ui.test.ktx)
     debugImplementation(libs.ui.tooling.ktx)
     debugImplementation(libs.ui.test.manifest)
+    implementation(libs.navigator.ktx)
+
+    implementation(libs.koin.core.ktx)
+    implementation(project(":navigation"))
 }

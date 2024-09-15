@@ -4,7 +4,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.msqr.server_list.show_servers
+import com.msqr.server_list.ui.show_servers
 
 
 fun NavGraphBuilder.serverNavigationGraph(navController: NavController){

@@ -55,4 +55,8 @@ dependencies {
     androidTestImplementation(libs.ui.test.ktx)
     debugImplementation(libs.ui.tooling.ktx)
     debugImplementation(libs.ui.test.manifest)
+
+    implementation(libs.koin.core.ktx)
+    implementation(libs.koin.viewModel.ktx)
+    implementation(libs.koin.android.ktx)
 }

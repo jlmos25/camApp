@@ -8,6 +8,12 @@ test-ext = "1.2.1"
 espresso = "3.6.1"
 navigator = "2.8.0"
 koin-core = "4.0.0-RC2"
+appcompat = "1.7.0"
+material = "1.12.0"
+android = "8.1.1"
+android-kt = "1.9.22"
+com-google-android-material-material = "1.12.0"
+org-jetbrains-kotlin-jvm = "1.9.22"
 
 [libraries]
 androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
@@ -26,5 +32,13 @@ ui-tooling-ktx = { group = "androidx.compose.ui", name = "ui-tooling"}
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest"}
 navigator-ktx = {group = "androidx.navigation", name = "navigation-compose", version.ref  = "navigator"}
 koin-core-ktx = { group = "io.insert-koin",  name = "koin-core", version.ref  = "koin-core" }
+koin-viewModel-ktx = { group = "io.insert-koin",  name = "koin-core-viewmodel", version.ref  ="koin-core" }
+koin-android-ktx = { group = "io.insert-koin",  name = "koin-androidx-compose", version.ref  ="koin-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "com-google-android-material-material" }
 
 [plugins]
+android-application = { id = "com.android.application", version.ref = "android" }
+android-jetbrains-ktx = { id = "org.jetbrains.kotlin.android" , version.ref = "android-kt" }
+com-android-library = { id = "com.android.library", version.ref = "android" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
