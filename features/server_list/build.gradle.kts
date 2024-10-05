@@ -1,23 +1,23 @@
 plugins {
-    alias (libs.plugins.android.application)
     alias (libs.plugins.android.jetbrains.ktx)
+    alias(libs.plugins.com.android.library)
 }
 
 android {
-    namespace = "com.msqr.camapp"
+    namespace = "com.msqr.server_list"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.msqr.camapp"
         minSdk = 28
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
+    }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.10"
     }
 
     buildTypes {
@@ -35,17 +35,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
-    }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.10"
-    }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
     }
 }
 
@@ -66,10 +55,10 @@ dependencies {
     androidTestImplementation(libs.ui.test.ktx)
     debugImplementation(libs.ui.tooling.ktx)
     debugImplementation(libs.ui.test.manifest)
-    implementation(libs.navigator.ktx)
 
     implementation(libs.koin.core.ktx)
+    implementation(libs.koin.viewModel.ktx)
     implementation(libs.koin.android.ktx)
-    implementation(project(":navigation"))
-    implementation(project(":data"))
+
+    implementation(project(":domain"))
 }

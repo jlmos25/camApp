@@ -15,5 +15,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "CamApp"
 include(":app")
-//include(":serverList")
-//project(":serverList").projectDir = file("./features/serverList")
+include(":server_list")
+project(":server_list").projectDir = file("./features/server_list")
+include(":navigation")
+project(":navigation").projectDir = file("./features/navigation")
+include(":data")
+include(":domain")
