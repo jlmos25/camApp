@@ -24,5 +24,9 @@ class ServerLocalDataSource(private val serverDao: ServerDao): IServerLocalDataS
         }
     }
 
+    override suspend fun exists(serverIp:String): Flow<Boolean> {
+        return serverDao.exists(serverIp)
+    }
+
 
 }

@@ -15,4 +15,7 @@ interface ServerDao {
     @Query("select * from servers s order by s.serverName asc")
     fun findAll(): Flow<List<ServerEntity>>
 
+    @Query("SELECT EXISTS(SELECT * FROM servers s WHERE s.serverIp = :serverIp)")
+    fun exists(serverIp:String): Flow<Boolean>
+
 }
