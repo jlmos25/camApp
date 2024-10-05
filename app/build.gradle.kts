@@ -69,5 +69,7 @@ dependencies {
     implementation(libs.navigator.ktx)
 
     implementation(libs.koin.core.ktx)
+    implementation(libs.koin.android.ktx)
     implementation(project(":navigation"))
+    implementation(project(":data"))
 }

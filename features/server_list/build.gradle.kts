@@ -59,4 +59,6 @@ dependencies {
     implementation(libs.koin.core.ktx)
     implementation(libs.koin.viewModel.ktx)
     implementation(libs.koin.android.ktx)
+
+    implementation(project(":domain"))
 }
