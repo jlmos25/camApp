@@ -9,4 +9,5 @@ interface ServerRepository {
     suspend fun addServer(server: Server) : Flow<Response<Boolean>>
 
     suspend fun findAllServers(): Flow<List<Server>>
+    suspend fun checkServerConnection(server: Server): Flow<Response<Boolean>>
 }

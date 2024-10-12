@@ -1,8 +1,10 @@
 package com.msqr.data.di
 
 import androidx.room.Room
-import com.msqr.data.datasources.IServerLocalDataSource
-import com.msqr.data.datasources.ServerLocalDataSource
+import com.msqr.data.datasources.local.IServerLocalDataSource
+import com.msqr.data.datasources.local.ServerLocalDataSource
+import com.msqr.data.datasources.remote.CamApiRemoteDatasource
+import com.msqr.data.datasources.remote.ICamApiRemoteDatasource
 import com.msqr.data.db.AppDatabase
 import com.msqr.data.model.ServerEntity
 import com.msqr.data.repository.ServerRepositoryImpl
@@ -31,5 +33,9 @@ val dataBaseModule = module {
             ServerEntity::serverName mappedTo Server::serverName
         }.build() }
 
+}
+
+val remoteRepositoryModule = module {
+    singleOf(::CamApiRemoteDatasource) bind ICamApiRemoteDatasource::class
 }
 

@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.koin.core.ktx)
     implementation(libs.koin.android.ktx)
     implementation(libs.kotlin.corutines)
+    implementation(libs.retrofit.ktx)
+    implementation(libs.converter.gson.ktx)
     implementation(project(":domain"))
     implementation("dev.krud:shapeshift:0.8.0")
 

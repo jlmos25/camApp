@@ -17,6 +17,7 @@ org-jetbrains-kotlin-jvm = "1.9.22"
 kotlin-corutines-version = "1.7.0"
 room-version = "2.6.1"
 ksp-version = "1.9.22-1.0.17"
+retrofit-version = "2.11.0"
 
 [libraries]
 androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
@@ -43,6 +44,8 @@ kotlin-corutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines
 room-runtime = {group = "androidx.room", name = "room-runtime", version.ref="room-version"}
 room-compiler = {group = "androidx.room", name = "room-compiler", version.ref="room-version"}
 room-ktx = {group = "androidx.room", name = "room-ktx", version.ref="room-version"}
+retrofit-ktx = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit-version" }
+converter-gson-ktx = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref ="retrofit-version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android" }

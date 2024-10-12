@@ -1,4 +1,4 @@
-package com.msqr.data.datasources
+package com.msqr.data.datasources.local
 
 import com.msqr.domain.model.Server
 import kotlinx.coroutines.flow.Flow

@@ -1,4 +1,4 @@
-package com.msqr.data.datasources
+package com.msqr.data.datasources.local
 
 import com.msqr.data.db.dao.ServerDao
 import com.msqr.data.model.ServerEntity
